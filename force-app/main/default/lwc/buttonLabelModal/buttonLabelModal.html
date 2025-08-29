@@ -1,0 +1,20 @@
+<template>
+    <lightning-modal-header label="LWC Button Label Change Modal"></lightning-modal-header>
+    <lightning-modal-body>
+        <lightning-input 
+        type="text" 
+        label="Change the button label" 
+        placeholder="Type up to 25 characters..." 
+        maxlength="25"
+        onchange={handleInputChange}
+        required=true>
+        </lightning-input>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button 
+        label="Save" 
+        onclick={handleSave}
+        disabled={isSaveDisabled}>
+        </lightning-button>
+    </lightning-modal-footer>
+</template>
